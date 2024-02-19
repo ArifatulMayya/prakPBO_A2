@@ -1,0 +1,52 @@
+/*
+ * File         : Titik.java 19/02/2024
+ * Penulis      : Arifatul Mayya Kholidha
+ * NIM          : 24060122120003
+ * Deskripsi    : File Kelas Titik
+ */
+
+public class Titik {
+        double absis;
+        double ordinat;
+        static int counterTitik;
+        
+        public Titik(){
+                absis = 0;
+                ordinat = 0;
+                counterTitik++;
+        }
+        
+        public Titik(double x, double y){
+                this.absis = x;
+                this.ordinat = y;
+                counterTitik++;
+        }
+        
+        // OVERLOADING KONSTRUKTOR 
+        public Titik(int x, int y){
+                this.absis = x;
+                this.ordinat = y;
+                counterTitik++;
+        }
+        
+        void setAbsis(double x) {
+                this.absis = x;
+        }
+        
+        void setOrdinat(double y){
+                this.ordinat = y;
+        }
+        
+        double getAbsis(){
+                return this.absis;
+        }
+        
+        double getOrdinat(){
+                return this.ordinat;
+        }
+        
+        int getCounterTitik(){
+                return counterTitik;
+        }
+    }
+    
